@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>GeoServer REST API GUI</title>
+		<meta name="description" content="description">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" media="screen" href="css/bootstrap.min.css">
+        <link rel="stylesheet" media="screen" href="css/handsontable.full.min.css">
+        <style>
+        	#geoserver-rest-api-main .row {
+        		margin-top: 15px;
+        		margin-bottom: 15px;
+        	}
+        </style>
+        <script src="js/jquery-2.1.0.min.js"></script>
+        <script src="js/mustache.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/handsontable.full.min.js"></script>
+        <script src="js/geoserver.js"></script>
+        <script src="js/app.js"></script>
+    </head>
+<body>
+	<div id="geoserver-rest-api-main" class="container-fluid">
+		<div class="row">
+			<div class="col-md-12" style="text-align: center">
+				<button class="btn btn-success play-rest-requests" style="width:200px;">Play</button>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-4">
+				<label for="host">Host</label>
+				<input type="text" class="form-control" id="host" value="localhost">
+			</div>
+			<div class="col-md-2">
+				<label for="port">Port</label>
+				<input type="numeric" class="form-control" id="port" value="8080">
+			</div>
+			<div class="col-md-2">
+				<label for="auth">Authorization</label>
+				<select name="auth" id="auth">
+					<option value="basic">Basic</option>
+				</select>
+			</div>
+			<div class="col-md-2">
+				<label for="login">Login</label>
+				<input type="text" class="form-control" id="login" value="admin">
+			</div>
+			<div class="col-md-2">
+				<label for="password">Password</label>
+				<input type="text" class="form-control" id="password" value="geoserver">
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<label for="workspaces-data-grid">Workspaces</label>
+				<div id="workspaces-data-grid">
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<label for="postgis-data-grid">Datastore PostGIS</label>
+				<div id="postgis-data-grid">
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<label for="ds-shapes-data-grid">Datastore Shapes</label>
+				<div id="ds-shapes-data-grid">
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<label for="layers-data-grid">Layers &amp; Styles</label>
+				<div id="layers-data-grid">
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12" style="text-align: center">
+				<button class="btn btn-success play-rest-requests" style="width:200px;">Play</button>
+			</div>
+		</div>
+	</div>
+
+</html>
