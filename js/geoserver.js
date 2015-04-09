@@ -277,6 +277,7 @@ var geoserver = {
                     "<user>" + settings.dsUser + "</user>" +
                     "<passwd>" + settings.dsPasswd + "</passwd>" +
                     "<dbtype>postgis</dbtype>" +
+                    '<entry key="Expose primary keys">true</entry>' +
                 "</connectionParameters>" +
             "</dataStore>";
 
